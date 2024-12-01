@@ -54,7 +54,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 50px 50px 50px;
     padding-top: 50px;
     padding-bottom: 70px;
     /* margin-top: 10px; */
@@ -70,6 +70,16 @@
     flex-shrink: 0;
     min-width: 60px;
     max-width: 60px;
+}
+
+.location {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.email {
+    grid-row-start: 3;
+    grid-column-start: 2;
 }
 
 .icon-img {
