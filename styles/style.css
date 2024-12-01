@@ -1,3 +1,7 @@
+body {
+    
+}
+
 .flexbox-container {
     display: flex;
     flex-direction: row;
@@ -6,24 +10,72 @@
     gap: 40px;
 }
 
-.white-background {
+.gradient-background {
+    /* https://colorhunt.co/palette/89a8b2b3c8cfe5e1daf1f0e8 */
+    background: linear-gradient(300deg, #89A8B2, #B3C8CF, #E5E1DA);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+
+.bg-color {
+    background-color: #F1F0E8;
+}
+
+.primary-background {
     /* bg-body-tertiary */
     /* background-color: rgb(248, 249, 250); */
     /* background-color: rgb(233, 236, 239); */
 
-    background-color: #faf9f6;
+    background-color: #E5E1DA;
 }
+
+.secondary-background {
+    background-color: #B3C8CF;
+}
+
+.tertiary-background {
+    background-color: #89A8B2;
+}
+
 
 .skill-card  {
     /* background-color: #faf9f6; */
     background-color: rgb(248, 249, 250);
     /* background-color: rgb(233, 236, 239); */
+    /* background-color: #B3C8CF; */
     flex-grow: 0;
     flex-shrink: 0;
 
 }
 
 .skill-card > svg {
+    flex-shrink: 0;
+    min-width: 60px;
+    max-width: 60px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 50px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 0px; */
+}
+
+.contact {
+    /* grid-row-start: span 2; */
+    /* color: #89A8B2; */
+}
+
+.contact-info {
+    text-align: left;
+}
+
+
+.contact-info > svg {
     flex-shrink: 0;
     min-width: 60px;
     max-width: 60px;
