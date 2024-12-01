@@ -86,6 +86,21 @@ body {
     padding-top: 10px;
 }
 
-@media (min-width: 481px) and (max-width: 1200px) {
-    
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: x-large;
+    }
+    .grid-container{
+        display: inline-block;
+        grid-template-columns: 1f;
+        grid-template-rows: 100px 100px 100px 100px;
+        padding-top: 50px;
+        padding-bottom: 70px;
+        /* margin-top: 10px; */
+        /* margin-bottom: 0px; */
+    }
+
+    .contact {
+        margin-bottom: 30px;
+    }
 }
